@@ -14,6 +14,7 @@ nav {
     border-bottom: 1px solid #e5e5e5;
     background: #fdfdfd;
     position: sticky;
+    text-align: center;
     top: 0;
 }
 
@@ -72,3 +73,4 @@ footer {
     margin-bottom: 15px;
     border: 2px solid #e5e5e5;
 }
+
