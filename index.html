@@ -3,105 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Her Name] | Legal Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-    
-</head>
+    <title>Riya Dev | Legal Portfolio</title>
 
-    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
 <body>
 
-<header>
-    <h1>[Her Name]</h1>
-
-    <img src="img/headshot.jpg" alt="Headshot" class="headshot">
-
-    <p>Law graduate focused on research, drafting, and legal analysis.</p>
-</header>
-
-
-<nav>
-    <a href="#about">About</a>
+<!-- Navigation -->
+<nav id="navbar">
     <a href="#resume">Resume</a>
     <a href="#samples">Writing Samples</a>
     <a href="#projects">Projects</a>
+    <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-    <h2>About</h2>
-    <p>
-        [Short intro about her background, areas of legal interest, coursework, and strengths.
-        Keep this to three or four lines. You will replace this text once she sends her info.]
-    </p>
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="intro-content">
+
+        <div class="intro-image">
+            <img src="img/headshot.jpg" alt="Headshot" class="intro-headshot">
+        </div>
+
+        <div class="intro-text">
+            <p class="intro-label">ABOUT ME</p>
+
+            <h1 class="intro-title">
+                I’m Riya Dev, an LL.M. Candidate focused on U.S. Law, Business Law, and Compliance.
+            </h1>
+
+            <p class="intro-subtitle">
+                I am currently pursuing my LL.M. at Loyola University Chicago, concentrating on U.S. Law with an emphasis on Business and Commercial Law.
+                My legal experience across Nepal and the U.S. has shaped my dedication to ethical, client-centered practice.
+                I have strong interests in contract drafting, corporate compliance, intellectual property, and cross-border transactions.
+                I am also preparing for the U.S. Bar Exam and look forward to contributing to the international legal field.
+            </p>
+
+            <div class="intro-buttons">
+                <a href="#resume" class="intro-btn">Resume</a>
+                <a href="#samples" class="intro-btn">Writing Samples</a>
+                <a href="#projects" class="intro-btn">Projects</a>
+                <a href="#contact" class="intro-btn">Contact</a>
+            </div>
+        </div>
+
+    </div>
 </section>
 
+<!-- Resume -->
 <section id="resume">
     <h2>Resume</h2>
     <p><a class="button" href="pdfs/resume.pdf" target="_blank">View Resume</a></p>
 </section>
 
+<!-- Writing Samples -->
 <section id="samples">
     <h2>Writing Samples</h2>
 
     <div class="item">
         <h3>Legal Memo: [Topic Name]</h3>
         <p>Skills shown: research, citation, interpretation.</p>
-        <a href="pdfs/memo_sample.pdf" target="_blank">Open PDF</a>
+        <a href="pdfs/memo_sample.pdf" target="_blank" class="button">Open PDF</a>
     </div>
 
     <div class="item">
         <h3>Case Brief: [Case Title]</h3>
-        <p>Skills shown: analysis, summarizing case law.</p>
-        <a href="pdfs/case_brief.pdf" target="_blank">Open PDF</a>
+        <p>Skills shown: case analysis, summarization, issue identification.</p>
+        <a href="pdfs/case_brief.pdf" target="_blank" class="button">Open PDF</a>
     </div>
 
     <div class="item">
         <h3>Research Summary: [Issue or Area]</h3>
-        <p>Skills shown: legal research, issue spotting.</p>
-        <a href="pdfs/research_summary.pdf" target="_blank">Open PDF</a>
+        <p>Skills shown: legal research, practical application, analytical writing.</p>
+        <a href="pdfs/research_summary.pdf" target="_blank" class="button">Open PDF</a>
     </div>
 </section>
 
+<!-- Projects -->
 <section id="projects">
     <h2>Legal Projects</h2>
 
     <div class="item">
         <h3>[Project Title]</h3>
         <p>
-            One or two sentences on what the problem was and how she contributed.
-            This is where short case studies go.
+            One or two sentences describing the objective, her role, and the outcome.
+            This section highlights applied legal skills and hands-on experience.
         </p>
     </div>
 
 </section>
 
+<!-- About / Bio -->
+<section id="about">
+    <h2>About</h2>
+    <p>
+        Riya is an LL.M. student at Loyola University Chicago focusing on U.S. Law with an emphasis on Business and Commercial Law.
+        Her cross-border legal experience shapes her interest in compliance, contracts, and transactional work.
+    </p>
+</section>
+
+<!-- Skills -->
 <section id="skills">
     <h2>Skills</h2>
     <ul>
-        <li>Legal research: Westlaw, LexisNexis</li>
-        <li>Drafting and editing legal documents</li>
-        <li>Microsoft Office and document management</li>
-        <li>Case organization and file review</li>
+        <li>Legal Research (Westlaw, LexisNexis)</li>
+        <li>Contract Drafting & Document Review</li>
+        <li>Corporate Compliance Support</li>
+        <li>Case Organization & File Management</li>
+        <li>Intellectual Property & Cross-Border Transactions</li>
         <li>[Languages, if any]</li>
     </ul>
 </section>
 
+<!-- Contact -->
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:[her email]">[her email]</a></p>
-    <p>LinkedIn: <a href="[her LinkedIn URL]" target="_blank">Profile</a></p>
+    <p>Email: <a href="mailto:riya@email.com">riya@email.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com" target="_blank">Profile</a></p>
 </section>
 
+<!-- Footer -->
 <footer>
-    <p>© [Year] [Her Name]</p>
+    Portfolio Website — Riya Dev
 </footer>
+
+<!-- Script for navbar color change -->
+<script>
+    window.addEventListener("scroll", function() {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 40) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
 
 </body>
 </html>
-
-
-
-
