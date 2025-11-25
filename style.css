@@ -106,3 +106,70 @@
     background: #6a3d68;
     color: white;
 }
+
+/* ===========================
+   MOBILE RESPONSIVE FIX
+   =========================== */
+
+@media (max-width: 850px) {
+
+    .intro-section {
+        padding: 100px 20px 60px;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .intro-image {
+        flex: unset;
+        justify-content: center;
+    }
+
+    .intro-headshot {
+        width: 220px;
+        height: 220px;
+        border-radius: 12px;
+    }
+
+    .intro-text {
+        flex: unset;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    /* shrink the tinted band and remove full-height behavior */
+    .intro-text::before {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        border-radius: 10px;
+    }
+
+    .intro-text-inner {
+        max-width: 100%;
+    }
+
+    .intro-title {
+        font-size: 28px;
+        line-height: 1.35;
+    }
+
+    .intro-subtitle {
+        font-size: 16px;
+    }
+
+    .intro-buttons {
+        justify-content: flex-start;
+    }
+
+    nav {
+        background: white; /* makes nav readable on mobile */
+        border-bottom: 1px solid #e8dce7;
+    }
+}
